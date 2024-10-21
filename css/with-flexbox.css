@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #121212;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.float-left {
+    /* float: left; */
+}
+
+.clearfix::after {
+    /* content: "";
+    clear: both;
+    display: table; */
+}
+
+#top {
+    background-color: #387478;
+    position: fixed;
+    width: 100%;
+}
+
+#navigation {
+    /* font-size: 0; */
+}
+
+#navigation ul{
+    display: flex;
+}
+
+#navigation li {
+    /* display: inline-block; */
+    list-style-type: none;
+}
+
+#navigation li a {
+    display: inline-block;
+    padding: 15px 20px 13px;
+    color: #E2F1E7;
+    text-decoration: none;
+    border-bottom: 5px solid #387478;
+    font-size: 16px;
+}
+
+#navigation li a:hover {
+    color: #E2F1E7;
+    border-bottom: 5px solid #E2F1E7;
+}
+
+#content {
+    padding-top: 55px;
+}
+
+#page-title {
+    margin-bottom: 15px;
+}
+
+#page-title h1 {
+    padding: 15px;
+}
+
+#slider {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+#slider img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#tiles {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#tiles .tile {
+    width: 30%;
+    /* display: inline-block; */
+    /* padding: 15px; */
+    padding: 15px 0;
+}
+
+.tile-image {
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.tile-image img {
+    width: 100%;
+}
+
+.tile-detail {
+    text-align: center;
+}
+
+#main {
+    background-color: grey;
+    padding: 15px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+#main-image {
+    width: 30%;
+    display: flex;
+    align-items: start;
+}
+
+#main-image img{
+    width: 100%
+}
+
+#main-content {
+    width: 70%;
+    padding: 0 15px;
+}
+
+#main-actions {
+    margin-top: 40px;
+    /* text-align: right; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+#main-actions button{
+    padding: 10px 20px;
+    background-color: #387478;
+    color: #E2F1E7;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+#main-actions button:hover{
+    background-color: #629584;
+}
+
+#main-actions button:first-child{
+    margin-right: 25px;
+}
+
+#footer {
+    background-color: grey;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#footer-content h2 {
+    margin-bottom: 15px;
+}
